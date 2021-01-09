@@ -1,0 +1,35 @@
+@mixin buttonTypeOne {
+    outline:none;
+    padding:0.3rem 0.6rem;
+    border:0.02rem solid $secondaryColor;
+    background:transparent;
+    color:$secondaryColor;
+    margin-left:0.2rem;
+    font-weight:bolder;
+    transition:0.3s linear; 
+}
+
+
+@mixin buttonTypeTwo {
+    background: $primaryColor;
+    outline: none;
+    border: none;
+    display:inline-block;
+    padding: 0.4rem 0.8rem;
+    margin:1rem 0;
+    color: black;
+    font-weight: bold;
+    z-index:50;
+    transition:0.3s linear;
+}
+
+@mixin buttonTypeThree{
+    outline:none;
+    padding:0.3rem 0.6rem;
+    border:0.02rem solid $primaryColor;
+    background:transparent;
+    color:$primaryColor;
+    margin-left:0.2rem;
+    font-weight:bolder;
+    transition:0.3s linear;
+}

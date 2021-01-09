@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CIRCULAR PROGRESS BAR-->
+    <link href="jCirclize.css" rel="stylesheet">
+
+    <!--SNOWFALL CSS-->
+    <link rel="stylesheet" href="jquery.fallingsnow.css">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+
+    <!--BOOTSTRAP 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--FONTAWESOME CDN-->
+    <script src="https://kit.fontawesome.com/312ebe720c.js" crossorigin="anonymous"></script>
+
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    <!--AOS CSS CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+       <div id="snow"> </div>
+
+    <section id="header">
+     
+        <div class="design">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!--NAVIGATION AREA-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">My portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works">Creativity</a>
+                        </li>
+
+                    </ul>
+
+                   <a href="#contact" id="contactBtn">Contact</a>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!--HEADER TEXT AND IMAGE-->
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-7 my-auto">
+                    <div class="headerText" data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">
+                        <h4><span>Smruti</span> Sourav</h4>
+                        <h5><span class="typingEffect"></span></h5>
+                        <p>I am an enthusiast of technology. My work is related to web development and programming that
+                            can help you achieve better results. </p>
+                        <button id="hireMe">Hire Me</button>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-8 mt-4 mt-md-0 mx-auto mx-md-0">
+                    <div class="headerImage" data-aos="fade-left"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">
+                        <div class="imgWraper">
+                            <img class="img-fluid" src="images/headerbg.jpg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!--ABOUT SECTION-->
+    <section id="about">
+        <div class="design">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-7">
+                    <div class="myImage my-auto" data-aos="fade-up"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-sine">
+                        <div class="imgWrapper">
+                            <img class="img-fluid" src="images/Smruti.jpg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-4 mt-lg-0">
+                    <div class="aboutText" data-aos="fade-down"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-sine">
+                        <h3>About Me <span>....</span></h3>
+                        <h5>Let Me Introduce Myself</h5>
+                        <h2>I am <span>Smruti Sourav Nanda</span> </h2>
+                        <p>I am Smruti Sourav Nanda. I am studying BSc. ITM ( Information Technology and Management)
+                            course in Ravenshaw University, Cuttack. I am a web developer and a UX/UI designer.
+                            programming is also my passion.
+                        </p>
+                       <a href="file-sample.pdf" download> <button class="btn">Download CV</button></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Wish Section-->
+    <section id="wish">
+
+        <div class="wishHeader">
+            <h2>Today's Quote</h2>
+        </div>
+
+        <div class="date">
+            <small id="todayDate">8 January 2021</small>
+        </div>
+
+        <span id="cross"> <i class="fas fa-times"></i> </span>
+
+        <div class="col-12 wishWrapper">
+            <div class="wishArea">
+                <p>“You only live once, but if you do it right, once is enough.”
+                </p>
+
+                <h5>-- Mae West</h5>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Wish Button-->
+    <button id="wishBtn" title="Today's Quote"> <i class="fas fa-quote-right"></i> </button>
+
+
+
+    <!--SERVICES SECTION-->
+    <section id="services">
+        <div class="design">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5 text-center servicesHeader">
+                    <h3>Services<span>...</span></h3>
+                    <h2>what I offer</h2>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 my-5">
+                    <div class="serviceWrapper" data-aos="zoom-in"
+                    data-aos-duration="1900" data-aos-easing="ease-in-sine">
+                        <div class="iconWrapper"><i class="fa fa-snowflake-o" aria-hidden="true"></i></div>
+                        <h4>Web Design</h4>
+                        <span></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, modi!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 my-5">
+                    <div class="serviceWrapper" data-aos="zoom-in"
+                    data-aos-duration="1900" data-aos-easing="ease-in-sine">
+                        <div class="iconWrapper"><i class="fab fa-quinscape"></i></div>
+                        <h4>UI Design</h4>
+                        <span></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, modi!</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 my-5">
+                    <div class="serviceWrapper" data-aos="zoom-in"
+                    data-aos-duration="1900" data-aos-easing="ease-in-sine">
+                        <div class="iconWrapper"><i class="fas fa-drafting-compass"></i></div>
+                        <h4>Creative Design</h4>
+                        <span></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, modi!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 my-5">
+                    <div class="serviceWrapper" data-aos="zoom-in"
+                    data-aos-duration="1900" data-aos-easing="ease-in-sine">
+                        <div class="iconWrapper"><i class="fab fa-wordpress-simple"></i></div>
+                        <h4>Wordpress</h4>
+                        <span></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, modi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--SKILLS AND EDUCATION-->
+    <section id="skills">
+
+        <div class="design">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5 text-center skillsHeader">
+                    <h3>qualifications<span>...</span></h3>
+                    <h2>Skills and Education</h2>
+                </div>
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="skillsWrapper" data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                        <div class="skillsList">
+                            <ul>
+                                <li>HyperText Markup Language (HTML)</li>
+                                <li>Cascading Style Sheets (CSS)</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+                                <li>Website Design</li>
+                                <li>Front-end Design</li>
+                                <li>Programming</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="toolsWrapper my-4">
+
+                        <div class="skillContainer" data-aos="fade-right"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="3000">
+                            <svg class="radial-progress" data-percentage="90" viewBox="0 0 80 80">
+                                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                <circle class="complete" cx="40" cy="40" r="35"
+                                    style="stroke-dashoffset: 39.58406743523136;"></circle>
+                                <text class="percentage" x="50%" y="57%"
+                                    transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                            </svg>
+
+                            <h6>VS Code</h6>
+
+                        </div>
+
+                        <div class="skillContainer" data-aos="fade-up"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="3000">
+                            <svg class="radial-progress" data-percentage="82" viewBox="0 0 80 80">
+                                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                <circle class="complete" cx="40" cy="40" r="35"
+                                    style="stroke-dashoffset: 39.58406743523136;"></circle>
+                                <text class="percentage" x="50%" y="57%"
+                                    transform="matrix(0, 1, -1, 0, 80, 0)">82%</text>
+                            </svg>
+
+                            <h6>Canva</h6>
+
+                        </div>
+
+
+                        <div class="skillContainer" data-aos="fade-left"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="3000">
+                            <svg class="radial-progress" data-percentage="72" viewBox="0 0 80 80">
+                                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                <circle class="complete" cx="40" cy="40" r="35"
+                                    style="stroke-dashoffset: 39.58406743523136;"></circle>
+                                <text class="percentage" x="50%" y="57%"
+                                    transform="matrix(0, 1, -1, 0, 80, 0)">72%</text>
+                            </svg>
+
+                            <h6>Figma</h6>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="educationWrapper">
+                        <div class="edu" data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <span id="iconHolder"><i class="fas fa-briefcase"></i></span>
+                            <span>Present</span>
+                            <h5>Ravenshaw University, Cuttack</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi impedit dolore.</p>
+                        </div>
+
+                        <div class="edu" data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <span id="iconHolder"><i class="fas fa-briefcase"></i></span>
+                            <span>Senior Secondary Education</span>
+                            <h5>Carmel English Medium School, Khurda</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi impedit dolore.</p>
+
+                        </div>
+
+                        <div class="edu" data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <span id="iconHolder"><i class="fas fa-briefcase"></i></span>
+                            <span>Secondary Education</span>
+                            <h5>Chilkarani English Medium School, Khurda</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi impedit dolore.</p>
+
+                        </div>
+
+                        <div class="edu" data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            <span id="iconHolder"><i class="fas fa-briefcase"></i></span>
+                            <span>Primary Education</span>
+                            <h5>Vairabee English Medium School, Khurda</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi impedit dolore.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--WORK SECTION-->
+    <section id="works">
+
+        <div class="design">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5 text-center workHeader">
+                    <h3>projects<span>...</span></h3>
+                    <h2>My Creative Works</h2>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="workWrapper" data-aos="zoom-in-down"
+                    data-aos-duration="1600" data-aos-easing="linear">
+                        <img class="img-fluid" src="images/work.jpg" alt="" srcset="">
+                        <span> <i class="fas fa-location-arrow"></i> </span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="workWrapper" data-aos="zoom-in-down"
+                    data-aos-duration="1600" data-aos-easing="linear">
+                        <img class="img-fluid" src="images/work.jpg" alt="" srcset="">
+                        <span> <i class="fas fa-location-arrow"></i> </span>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" 
+                data-aos="zoom-in-down"
+                    data-aos-duration="1600" data-aos-easing="linear">
+                    <div class="workWrapper">
+                        <img class="img-fluid" src="images/work.jpg" alt="" srcset="">
+                        <span> <i class="fas fa-location-arrow"></i> </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--CONTACT SECTION-->
+    <section id="contact">
+
+        <div class="design">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 contactHeader my-4 text-center">
+                    <h2>Looking to Design a similar project?</h2>
+                    <p>Contact me on any platform and I will happy to help you out</p>
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="contactWrapper" data-aos="zoom-in-left"
+                    data-aos-duration="1200" data-aos-easing="linear">
+                        <span><i class="fas fa-at"></i></span>
+                        <h5>E-Mail me at</h5>
+                        <p>smrutisouravnanda@gmail.com</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="contactWrapper" data-aos="zoom-in-left"
+                    data-aos-duration="1200" data-aos-easing="linear">
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <h5>Facebook</h5>
+                        <p>smrutisouravnanda@gmail.com</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="contactWrapper" data-aos="zoom-in-left"
+                    data-aos-duration="1200" data-aos-easing="linear">
+                        <span><i class="fab fa-linkedin-in"></i></span>
+                        <h5>linkedIn</h5>
+                        <p>linkedin.com/smrutisouravnanda</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="contactWrapper" data-aos="zoom-in-left"
+                    data-aos-duration="1200" data-aos-easing="linear">
+                        <span><i class="fab fa-twitter"></i></span>
+                        <h5>Twitter</h5>
+                        <p>twitter.com/Smruti_07</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 my-4">
+                    <div class="contactWrapper" data-aos="zoom-in-left"
+                    data-aos-duration="1200" data-aos-easing="linear">
+                        <span><i class="fab fa-instagram"></i></span>
+                        <h5>Instagram</h5>
+                        <p>instagram.com/im_smruti_07</p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                <div class="col-lg-6 my-5">
+                    <div class="formWrapper" data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">
+                        <div class="col-12 mb-5 text-center formHeader">
+                            <h3>any question<span>...</span></h3>
+                            <h2>Drop me a line</h2>
+                        </div>
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Your Name">
+                            <input type="email" name="" id="" placeholder="Your Email">
+                            <select name="" id="" aria-placeholder="Select an Option">
+                                <option value="Business Query">Business Query</option>
+                                <option value="Other Query">Other Query</option>
+                            </select>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+                            <button type="submit">submit</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4 my-5 d-none d-lg-block">
+                    <div class="contactImage" data-aos="fade-left"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">
+                        <img class="img-fluid" src="images/contactImage.png" alt="" srcset="">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER SECTION-->
+    <footer>
+        <small>Made with <i class="fas fa-heart"></i> By: Smruti Sourav Nanda </small>
+    </footer>
+
+
+
+    <!--BOOTSTRAP 5 JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script>
+
+
+
+    <!--TYPING EFFECT JS-->
+    <script src="typed.js"></script>
+    <script src="typing.js"></script>
+
+
+    <!--SNOWFALL JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="jquery.fallingsnow.min.js"></script>
+    <script src="snowfall.js"></script>
+
+    <!--CIRULAR PROGRESS BAR-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
+    <script src="dist/jquery.jCirclize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').circlize({
+                background: "rgba(20,20,20,0.5)",
+                foreground: "#1a1a1a",
+                stroke: 20,
+                radius: 100,
+                duration: 1000,
+                perc: 50,
+                min: 100,
+                max: 100,
+                usePercentage: true
+            });
+        });
+    </script>
+
+    <script src="quotes.js"></script>
+
+
+
+     <!--Skills circular progress Bar Jquery-->
+
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+ <script>
+     $('svg.radial-progress').each(function (index, value) {
+         $(this).find($('circle.complete')).removeAttr('style');
+     });
+ </script>
+
+ <!--Circular progress bar animate on scroll-->
+ <script>
+     $(window).scroll(function () {
+         $('svg.radial-progress').each(function (index, value) {
+             // If svg.radial-progress is approximately 25% vertically into the window when scrolling from the top or the bottom
+             if (
+                 $(window).scrollTop() > $(this).offset().top - ($(window).height() * 0.75) &&
+                 $(window).scrollTop() < $(this).offset().top + $(this).height() - ($(window).height() * 0.25)
+             ) {
+                 // Get percentage of progress
+                 percent = $(value).data('percentage');
+                 // Get radius of the svg's circle.complete
+                 radius = $(this).find($('circle.complete')).attr('r');
+                 // Get circumference (2πr)
+                 circumference = 2 * Math.PI * radius;
+                 // Get stroke-dashoffset value based on the percentage of the circumference
+                 strokeDashOffset = circumference - ((percent * circumference) / 100);
+                 // Transition progress for 1.25 seconds
+                 $(this).find($('circle.complete')).animate({ 'stroke-dashoffset': strokeDashOffset }, 1250);
+             }
+         });
+     }).trigger('scroll');
+ </script>
+
+
+
+<!--AOS JS CDN-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<!--Quote Date-->
+<script src="date.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1068 @@
+@import "__commonstyles.scss";
+
+$primaryColor: #64ff00;
+$secondaryColor:#FF2768;
+$tertiaryColor:#ceff1a;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Sriracha', cursive;
+   
+  
+}
+
+body{
+ background:#040402;
+ 
+}
+
+//common
+.design{
+    position:absolute;
+    left:50%;
+    bottom:0;
+    display:inline-block;
+    width:auto;
+    height:25px;
+    transform:translateY(9px) translateX(-50%);
+    clip-path: circle(50% at 50% 50%);
+    z-index:5;
+
+
+    span{
+        display:inline-block;
+        background:linear-gradient( $secondaryColor , $primaryColor);
+        height:100%;
+        width:4px;
+    }
+}  
+
+
+/*--HEADER SECTION--*/
+#header{
+    width:100%;
+    height: auto;
+    padding-bottom:4rem;
+    position:relative;
+    overflow:hidden;
+
+
+        &::before{
+        content:"";
+        position:absolute;
+        left:0;
+        bottom:0;
+        width:48%;
+        height:1rem;
+        border-bottom:0.3rem dashed gray;
+    }
+
+
+   
+
+    .navbar{
+
+
+        
+
+        .navbar-toggler{
+            background:transparent;
+            outline:none !important;
+            border:none !important;
+            z-index:10;
+
+            &:hover{
+            background:transparent;
+            }
+
+
+        }
+
+        .navbar-brand{
+            color:$primaryColor;
+            font-weight: bolder;
+            text-transform: capitalize;
+            position: relative;
+            padding: 0.05rem 0.4rem;
+            
+
+            &::before{
+                content: "";
+                width:1.25rem;
+                height:1.25rem;
+                position: absolute;
+                top:0;
+                left:0;
+                border-top: 0.25rem solid $primaryColor;
+                border-left: 0.25rem solid $primaryColor;
+         
+                
+            }
+
+            &::after{
+                content: "";
+                width:1.25rem;
+                height:1.25rem;
+                position: absolute;
+                right:0;
+                bottom:0;
+                border-right: 0.25rem solid $primaryColor;
+                border-bottom: 0.25rem solid $primaryColor;
+         
+  
+            }
+
+        }
+
+        .navbar-nav{
+            margin-left: auto;
+
+            & .nav-item{
+                margin: 0 0.2rem;
+          
+                & .nav-link{
+                    color:white;
+                    font-weight:bolder;
+                    position:relative;
+                    transition: all 0.4s linear;
+
+                    &:hover{
+                        color: $primaryColor;
+                    }
+
+                    &:hover::before{
+                     visibility: visible;
+                    }
+
+                    &::before{
+                        content: "";
+                        position:absolute;
+                        bottom: 0;
+                        left: 50%;
+                        background: $primaryColor;
+                        width: 0.2rem;
+                        height: 0.2rem;
+                        transition: visibility 0.4s linear;
+                        visibility: hidden;
+                    }
+                    
+
+                }
+            }
+
+            
+        }
+        & #contactBtn{
+
+            @include buttonTypeOne;
+            text-decoration: none;
+
+
+            &:hover{
+                background:$secondaryColor;
+                color:black;
+                
+            }
+ 
+        }
+    }
+
+
+    /*--HEADER TEXT AND IMAGE--*/
+    .headerText{
+        z-index:5;
+       h4{
+           font-size: 3.5rem;
+           color:white;
+           font-weight: bolder;
+
+           span{
+               color: $primaryColor;
+           }
+       }
+
+       h5{
+           font-size: 2rem;
+           color:whitesmoke;
+           margin: 2rem 0;
+       
+       }
+
+       p{
+           margin: 1.8rem 0;
+           color: gray;
+           line-height: 2rem;
+           font-size: 1.4rem;
+       }
+
+        #hireMe{
+   
+        @include buttonTypeTwo;
+
+        &:hover{
+            box-shadow:0 0 10px $primaryColor;
+        }
+
+        }
+    }
+
+
+}
+
+
+/*--ABOUT SECTION--*/
+#about{
+    width:100%;
+    height:auto;
+    position:relative;
+    padding:7rem 0;
+    overflow:hidden;
+
+    &::after{
+        content:"";
+        position:absolute;
+        right:0;
+        bottom:0;
+        width:48%;
+        height:2rem;
+        border-bottom:0.3rem dashed gray;
+    }
+
+
+    & .myImage{
+
+        .imgWrapper{
+            overflow: hidden;
+            position: relative;
+
+            &::before{
+                content:"";
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                background:linear-gradient(45deg, $tertiaryColor 15%, $primaryColor 65%);
+                z-index: -1;
+                transform:translateX(-2rem) translateY(-3rem);
+             
+   
+            }
+
+
+
+           
+
+            img{
+                padding:0.9rem;
+               
+
+            }
+        }
+    }
+
+    & .aboutText{
+        h3{
+            font-style: italic;
+            color:white;
+            text-transform:lowerCase;
+
+            span{
+                color:$primaryColor;
+            }
+        }
+
+        h5{
+            font-size:1rem;
+            margin:1.2rem 0;
+            color: $secondaryColor;
+        }
+
+        h2{
+            font-size:3rem;
+            color:$primaryColor;
+            font-style: italic;
+            margin:0.8rem 0;
+
+        
+        }
+
+        p{
+            margin:0.9rem 0;
+            font-size:1.2rem;
+            color:gray;
+        }
+
+        button{
+            @include buttonTypeTwo;
+
+            &:hover{
+                cursor:pointer;
+                box-shadow:0 0 10px $primaryColor;
+            }
+     
+
+        }
+    }
+}
+
+
+
+/*--SERVICES SECTION--*/
+#services{
+    width:100%;
+    height: auto;
+    padding:7rem 0 5rem 0;
+    position:relative;
+    overflow:hidden;
+
+    &::before{
+        content:"";
+        position:absolute;
+        left:0;
+        bottom:0;
+        width:48%;
+        height:2rem;
+        border-bottom:0.3rem dashed gray;
+    }
+
+
+
+    .servicesHeader{
+        h3{
+            font-style:italic;
+            text-transform:lowerCase;
+            color:white;
+            span{
+                color:$primaryColor;
+            }
+        }
+
+        h2{
+            font-size:3rem;
+            color:$primaryColor;
+        }
+    }
+
+    .serviceWrapper{
+        padding:1.4rem 0.8rem;
+        border-radius: 0px;
+        transition:0.4s linear;
+        position:relative;
+        background: #040402;
+        box-shadow:  5px 5px 3px #020201, 
+             -5px -5px 3px #060603;
+             position:relative;
+             z-index: 2;
+
+             &:hover{
+
+                box-shadow: inset 5px 5px 3px #020201, 
+                            inset -5px -5px 3px #060603;
+
+                            cursor:pointer;
+             }
+
+             &:hover::after{
+                width:3rem;
+                height:3rem;
+             }
+
+             &::after{
+                 content:"";
+                 position:absolute;
+                 bottom:0;
+                 right:0;
+                 background:linear-gradient(45deg, $tertiaryColor 15%, $primaryColor 65%);
+                 width:1rem;
+                 height:1rem;
+                 transition: 0.4s linear;
+                 clip-path: polygon(100% 0, 1% 99%, 100% 100%);
+        
+             }
+
+             &:hover .iconWrapper i{
+                 animation:rotating 3.8s infinite linear;
+             }
+
+             @keyframes rotating {
+
+                0%{
+                    transform:rotate(0deg);
+                }
+
+                100%{
+                    transform:rotate(360deg);
+                }
+                 
+             }
+
+        .iconWrapper{
+            background:linear-gradient(45deg, $tertiaryColor 15%, $primaryColor 65%);
+            display:inline-block;
+            padding:0.4rem 0.6rem;
+            position:absolute;
+            top: -20%;
+            left:5%;
+         
+            
+
+            & i{
+                font-size:2.2rem;
+                color:whitesmoke;
+                  
+            }
+
+        }
+
+        h4{
+            font-weight:bolder;
+            color:white;
+            margin:1rem 0;
+            
+
+        }
+
+        span{
+            display: inline-block;
+            width: 1.4rem;
+            height:0.2rem;
+            background:linear-gradient(45deg, $tertiaryColor 15%, $primaryColor 65%);
+            margin:0.4rem 0;
+        }
+        p{
+            color:gray;
+        }
+    }
+}
+
+
+/*--SKILLS AND EDUCATION SECTION--*/
+#skills{
+    position:relative;
+    padding:7rem 0 7rem 0;
+    overflow:hidden;
+
+    &::after{
+        content:"";
+        position:absolute;
+        right:0;
+        bottom:0;
+        width:48%;
+        height:2rem;
+        border-bottom:0.3rem dashed gray;
+    }
+
+
+
+
+    .toolsWrapper{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+       & .skillContainer{
+            text-align:center;
+            padding: 1.2rem 0;
+            transition:0.4s;
+            border-radius: 0px;
+            background:transparent;
+            border-radius:10px;
+            flex-basis: 30%;
+    
+                         
+    &:hover{
+   
+        transform:scale(1.03);
+     
+    }
+    
+            h6{
+                color:$secondaryColor;
+                font-weight:bolder;
+                
+            }             
+    
+            svg.radial-progress {
+                height: auto;
+                max-width: 200px;
+                padding: 1em;
+                transform: rotate(-90deg);
+                width: 100%;
+              }
+              
+              svg.radial-progress circle {
+                fill: rgba(0,0,0,0);
+                stroke: #fff;
+                stroke-dashoffset: 219.91148575129; 
+                stroke-width: 2;
+              }
+              
+              svg.radial-progress circle.incomplete { 
+                  opacity: 0; 
+                fill: none;
+                }
+              
+              svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+              
+              svg.radial-progress text {
+                fill: #fff;
+                text-anchor: middle;
+              }
+    
+              svg.radial-progress circle {
+                   stroke: $primaryColor; 
+                }
+    
+        }
+    }
+
+
+
+
+    .skillsHeader{
+        h3{
+            font-style:italic;
+            text-transform:lowerCase;
+            color:white;
+            span{
+                color:$primaryColor;
+            }
+        }
+
+        h2{
+            font-size:3rem;
+            color:$primaryColor;
+        }
+    }
+
+    .skillsWrapper{
+       
+        padding: 1.5rem 0.8rem;
+        border-radius: 0px;
+background: #040402;
+box-shadow:  5px 5px 0px #020201,
+             -5px -5px 0px #060603;
+        transition:0.7s linear;
+        position:relative;
+
+
+        
+        
+        &::before{
+
+            content:"";
+            position:absolute;
+            width:1rem;
+            height:1rem;
+            border-top:0.2rem solid $primaryColor;
+            border-left:0.2rem solid $primaryColor;
+            top:0;
+            left:0;
+            transition:0.7s linear;
+        }
+
+        &::after{
+            content:"";
+            position:absolute;
+            width:1rem;
+            height:1rem;
+            border-bottom:0.2rem solid $primaryColor;
+            border-right:0.2rem solid $primaryColor;
+            bottom:0;
+            right:0;
+            transition:0.7s linear;
+        }
+
+        &:hover::before{
+
+            width:100%;
+            height:100%;
+
+        }
+
+         &:hover::after{
+
+            width:100%;
+            height:100%;
+
+        }
+
+ 
+
+        .skillsList{
+            padding: 0.6rem 0.3rem;
+            
+            position:relative;
+            z-index: 2;
+
+
+            ul{
+                list-style-type:none;
+                padding:0;
+
+                li{
+                    margin: 1.2rem 0;
+                    color:$secondaryColor;
+                    padding-left:1.4rem;
+                    position:relative;
+                    transition:0.4s linear;
+
+                    &:hover{
+                        transform:translateX(0.2rem);
+                        color:blanchedalmond;
+                        opacity:0.8;
+                    }
+                    
+                    &::before{
+                        content:"";
+                        position:absolute;
+                        top:50%;
+                        left:0;
+                        transform:translateY(-50%);
+                        background:$primaryColor;
+                        width:0.4rem;
+                        height:0.4rem;
+                        border-radius:50%;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .educationWrapper{
+        border-left:0.15rem solid white;
+        padding: 0 1.2rem;
+
+
+        .edu{
+            
+            position: relative;
+            transition:all 0.4s linear;
+            margin: 0 0 1.5rem 0 ;
+            padding:0.4rem 0.8rem;
+            box-shadow:  5px 5px 3px #020201, 
+            -5px -5px 3px #060603;
+            position:relative;
+            z-index: 2;
+    
+            &:hover{
+    
+               box-shadow: inset 5px 5px 3px #020201, 
+                           inset -5px -5px 3px #060603;
+    
+                           cursor:pointer;
+            }
+    
+
+            #iconHolder{
+                position: absolute;
+                right:0;
+                top:0;
+                padding:0.5rem;
+                border-radius:10px;
+                z-index:-1;
+                border-radius: 0px;
+background: #040402;
+box-shadow: inset 5px 5px 0px #020201,
+            inset -5px -5px 0px #060603;
+              
+
+               & i{
+                    color:gray;
+                    font-size:1.2rem;
+                }
+            }
+
+            span{
+                color:$secondaryColor;
+            }
+
+            h5{
+                color:white;
+                font-weight:400;
+                margin: 0.8rem 0;
+            }
+
+            p{
+                color:gray;
+                line-height:1.5rem;
+            }
+        }
+    }
+}
+
+
+/*--WORK SECTION--*/
+#works{
+    width:100%;
+    height: auto;
+    position:relative;
+    padding:5rem 0 7rem 0;
+    overflow:hidden;
+
+    &::before{
+        content:"";
+        position:absolute;
+        left:0;
+        bottom:0;
+        width:48%;
+        height:2rem;
+        border-bottom:0.3rem dashed gray;
+    }
+
+    .workHeader{
+        h3{
+            font-style:italic;
+            text-transform:lowerCase;
+            color:white;
+            span{
+                color:$primaryColor;
+            }
+        }
+
+        h2{
+            font-size:3rem;
+            color:$primaryColor;
+        }
+    }
+
+    .workWrapper{
+        position:relative;
+        overflow:hidden;
+        margin:1.2rem auto;
+
+        &:hover::before{
+            height:100%;
+        }
+
+        &:hover span{
+            position:absolute;
+            left:50%;
+            bottom:50%;
+            transform: translateX(-50%) translateY(50%);
+        }
+
+        &:hover img{
+            filter:blur(1.7px);
+        }
+
+        &::before{
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:0%;
+            background: rgba(255, 39, 104,0.90);
+            transition:0.4s linear;
+            z-index:3;
+        }
+
+        span{
+            position:absolute;
+            left:50%;
+            bottom:-50%;
+            transform:translateX(-50%);
+            transition:0.4s linear;
+            border:0.15rem solid white;
+            padding:0.3rem;
+            z-index:4;
+
+            &:hover{
+                cursor:pointer;
+            }
+
+            i{
+                color:white;
+                font-weight:bolder;
+            }
+        }
+
+        img{
+            transition:0.4s linear;
+        }
+    }
+}
+
+
+/*--CONTACT SECTION--*/
+#contact{
+    width:100%;
+    height: auto;
+    padding:7rem 0 5rem 0;
+    position:relative;
+    overflow:hidden;
+
+    &::after{
+        content:"";
+        position:absolute;
+        right:0;
+        bottom:0;
+        width:48%;
+        height:2rem;
+        border-bottom:0.3rem dashed gray;
+    }
+
+    .contactHeader{
+        h2{
+            color:white;
+            font-weight:bolder;
+        }
+
+        p{
+            color:$primaryColor;
+            margin:1.6rem 0;
+            font-size:1rem;
+            font-style:italic;
+        }
+    }
+
+    .contactWrapper{
+        padding:0.4rem 0.3rem;
+        box-shadow: 5px 5px 3px #020201, 
+        -5px -5px 3px #060603;
+
+        span{
+ 
+            padding:0.3rem;
+
+            & i{
+                color:$primaryColor;
+                font-size:1.8rem;
+                margin-bottom:1rem;
+            }
+        }
+
+
+        h5{
+            font-size:0.8rem;
+            color:white;
+            opacity:0.4;
+        }
+
+        p{
+            font-size:1rem;
+            color:white;
+         
+        }
+    }
+
+    .formWrapper{
+        width:100%;
+
+        .formHeader{
+            h3{
+                font-style:italic;
+                text-transform:lowerCase;
+                color:white;
+                span{
+                    color:$primaryColor;
+                }
+            }
+    
+            h2{
+                font-size:3rem;
+                color:$primaryColor
+            }
+        }
+        form{
+            width:100%;
+            input{
+                padding:0.4rem 0.6rem;
+                width:100%;
+                margin:0.6rem 0rem;
+                border:0.2rem solid transparent;
+                outline:none;
+                color:white;
+                background:transparent;
+                box-shadow: inset 5px 5px 3px #020201, 
+                            inset -5px -5px 3px #060603;
+
+                &:focus{
+                    outline:none;
+                    border-bottom:0.2rem solid $primaryColor;
+                }
+            }
+
+            select{
+                padding:0.4rem 0.6rem;
+                width:100%;
+                margin:0.6rem 0rem;
+                border:0.2rem solid transparent;
+                outline:none;
+                color:white;
+                background:transparent;
+                box-shadow: inset 5px 5px 3px #020201, 
+                            inset -5px -5px 3px #060603;
+            }
+
+            textarea{
+                padding:0.4rem 0.6rem;
+                width:100%;
+                min-height:5rem;
+                margin:0.6rem 0rem;
+                border:0.2rem solid transparent;
+                outline:none;
+                color:white;
+                background:#040402;
+                box-shadow: inset 5px 5px 3px #020201, 
+                            inset -5px -5px 3px #060603;
+
+                &:focus{
+                    &:focus{
+                        outline:none;
+                        border-bottom:0.2rem solid $primaryColor;
+                    }
+                }
+            }
+
+            button{
+                @include buttonTypeTwo;
+
+
+                &:hover{
+                    box-shadow:0 0 10px $primaryColor;
+                    
+                }
+            }
+        }
+    }
+
+    .contactImage{
+
+    }
+}
+
+
+/*--FOOTER SECTION--*/
+footer{
+    width:100%;
+    padding:1rem 0;
+    margin-top:1rem;
+    text-align:center;
+    background: $primaryColor;
+
+    small{
+
+        font-weight:bolder;
+
+        & i{
+            color:red;
+        }
+    }
+}
+
+
+/*--WISH SECTION--*/
+#wish{
+    position:fixed;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100vh;
+    background:#e0e0e0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.5s linear;
+    z-index:51;
+
+    .wishHeader{
+        position:absolute;
+        top:0;
+        left:0;
+        padding:10px;
+        border-radius: 0px;
+        background: #e0e0e0;
+        box-shadow:  5px 5px 10px #c1c1c1,
+             -5px -5px 10px #ffffff;
+    }
+
+    .date{
+        position:absolute;
+        right:0;
+        bottom:0;
+        padding:10px;
+        background:black;
+        
+        small{
+            color:$primaryColor;
+        }
+    }
+    
+
+    span{
+    position:absolute;
+    top:0;
+    right:0;
+    padding:10px;
+    z-index:9;
+    background:black;
+
+    &:hover{
+        cursor:pointer;
+        
+    }
+
+    i{
+        font-size:1.5rem;
+        color:whitesmoke;
+    }
+
+    }
+    
+
+    .wishArea{
+        padding:2rem 0.5rem;
+        display:inline-block;
+        width:90%;
+        height:auto;
+        margin:auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        border-radius: 22px;
+background: #e0e0e0;
+box-shadow: inset 5px 5px 10px #c1c1c1,
+            inset -5px -5px 10px #ffffff;
+
+
+
+
+        h5{
+            color:gray;
+        }
+    }
+}
+
+
+
+/*--WISH BUTTON--*/
+#wishBtn{
+    position:fixed;
+    top:50%;
+    right:5px;
+    transform:translateY(-50%);
+    outline:0;
+    border:0;
+    background:$secondaryColor;
+    padding:10px;
+    z-index:50;
+
+   
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+    html{
+        font-size:80%;
+    }
+}
