@@ -325,15 +325,19 @@ body {
   transition: 0.4s linear;
   position: relative;
   background: #040402;
-  -webkit-box-shadow: 5px 5px 3px #020201,  -5px -5px 3px #060603;
-          box-shadow: 5px 5px 3px #020201,  -5px -5px 3px #060603;
+  -webkit-box-shadow: 5px 5px 3px #020201, 
+ -5px -5px 3px #060603;
+          box-shadow: 5px 5px 3px #020201, 
+ -5px -5px 3px #060603;
   position: relative;
   z-index: 2;
 }
 
 #services .serviceWrapper:hover {
-  -webkit-box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
-          box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
+  -webkit-box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
+          box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
   cursor: pointer;
 }
 
@@ -519,8 +523,10 @@ body {
   padding: 1.5rem 0.8rem;
   border-radius: 0px;
   background: #040402;
-  -webkit-box-shadow: 5px 5px 0px #020201, -5px -5px 0px #060603;
-          box-shadow: 5px 5px 0px #020201, -5px -5px 0px #060603;
+  -webkit-box-shadow: 5px 5px 0px #020201,
+ -5px -5px 0px #060603;
+          box-shadow: 5px 5px 0px #020201,
+ -5px -5px 0px #060603;
   -webkit-transition: 0.7s linear;
   transition: 0.7s linear;
   position: relative;
@@ -613,15 +619,19 @@ body {
   transition: all 0.4s linear;
   margin: 0 0 1.5rem 0;
   padding: 0.4rem 0.8rem;
-  -webkit-box-shadow: 5px 5px 3px #020201,  -5px -5px 3px #060603;
-          box-shadow: 5px 5px 3px #020201,  -5px -5px 3px #060603;
+  -webkit-box-shadow: 5px 5px 3px #020201, 
+ -5px -5px 3px #060603;
+          box-shadow: 5px 5px 3px #020201, 
+ -5px -5px 3px #060603;
   position: relative;
   z-index: 2;
 }
 
 #skills .educationWrapper .edu:hover {
-  -webkit-box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
-          box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
+  -webkit-box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
+          box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
   cursor: pointer;
 }
 
@@ -634,8 +644,10 @@ body {
   z-index: -1;
   border-radius: 0px;
   background: #040402;
-  -webkit-box-shadow: inset 5px 5px 0px #020201, inset -5px -5px 0px #060603;
-          box-shadow: inset 5px 5px 0px #020201, inset -5px -5px 0px #060603;
+  -webkit-box-shadow: inset 5px 5px 0px #020201,
+ inset -5px -5px 0px #060603;
+          box-shadow: inset 5px 5px 0px #020201,
+ inset -5px -5px 0px #060603;
 }
 
 #skills .educationWrapper .edu #iconHolder i {
@@ -788,8 +800,10 @@ body {
 
 #contact .contactWrapper {
   padding: 0.4rem 0.3rem;
-  -webkit-box-shadow: 5px 5px 3px #020201,  -5px -5px 3px #060603;
-          box-shadow: 5px 5px 3px #020201,  -5px -5px 3px #060603;
+  -webkit-box-shadow: 5px 5px 3px #020201, 
+ -5px -5px 3px #060603;
+          box-shadow: 5px 5px 3px #020201, 
+ -5px -5px 3px #060603;
 }
 
 #contact .contactWrapper span {
@@ -844,8 +858,10 @@ body {
   outline: none;
   color: white;
   background: transparent;
-  -webkit-box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
-          box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
+  -webkit-box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
+          box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
 }
 
 #contact .formWrapper form input:focus {
@@ -861,8 +877,10 @@ body {
   outline: none;
   color: white;
   background: transparent;
-  -webkit-box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
-          box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
+  -webkit-box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
+          box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
 }
 
 #contact .formWrapper form textarea {
@@ -874,8 +892,10 @@ body {
   outline: none;
   color: white;
   background: #040402;
-  -webkit-box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
-          box-shadow: inset 5px 5px 3px #020201,  inset -5px -5px 3px #060603;
+  -webkit-box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
+          box-shadow: inset 5px 5px 3px #020201, 
+ inset -5px -5px 3px #060603;
 }
 
 #contact .formWrapper form textarea:focus:focus {
@@ -948,8 +968,10 @@ footer small i {
   padding: 10px;
   border-radius: 0px;
   background: #e0e0e0;
-  -webkit-box-shadow: 5px 5px 10px #c1c1c1, -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #c1c1c1, -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #c1c1c1,
+ -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #c1c1c1,
+ -5px -5px 10px #ffffff;
 }
 
 #wish .date {
@@ -1003,8 +1025,10 @@ footer small i {
           flex-direction: column;
   border-radius: 22px;
   background: #e0e0e0;
-  -webkit-box-shadow: inset 5px 5px 10px #c1c1c1, inset -5px -5px 10px #ffffff;
-          box-shadow: inset 5px 5px 10px #c1c1c1, inset -5px -5px 10px #ffffff;
+  -webkit-box-shadow: inset 5px 5px 10px #c1c1c1,
+ inset -5px -5px 10px #ffffff;
+          box-shadow: inset 5px 5px 10px #c1c1c1,
+ inset -5px -5px 10px #ffffff;
 }
 
 #wish .wishArea h5 {
@@ -1027,7 +1051,7 @@ footer small i {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 80%;
+    font-size: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
